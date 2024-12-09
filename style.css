@@ -1,0 +1,204 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Banner */
+.banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.banner input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Produtos em destaque */
+.produtos-destaque {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 1em;
+    color: #555;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #ff6347;
+    margin: 10px 0;
+}
+
+/* Botões */
+.btn-comprar {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #e5533d;
+}
+
+/* Carrinho no canto inferior direito */
+#carrinho-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6347;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#carrinho-icon:hover {
+    background-color: #e5533d;
+}
+
+#carrinho-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#carrinho-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #fff;
+    color: #ff6347;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Filtros */
+.filtros {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtros select,
+.filtros input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.filtros label {
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.filtros a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #ff6347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
